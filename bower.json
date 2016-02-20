@@ -1,7 +1,8 @@
 {
-    "name": "angular-json-editor",
-    "version": "0.2.1",
+    "name": "fh.json.editor",
+    "version": "0.0.1",
     "authors": [
+        "Ferron Smith <ferronrsmith@gmail.com>",
         "Rodik Hanukaev <rodik@rodik.me>",
         "Topaz Bar <topaz1008@gmail.com>"
     ],

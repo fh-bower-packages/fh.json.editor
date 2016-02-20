@@ -1,9 +1,9 @@
 {
-    "name": "angular-json-editor",
-    "version": "0.2.1",
+    "name": "fh.json.editor",
+    "version": "0.0.1",
     "repository": {
         "type": "git",
-        "url": "git://github.com/rodikh/angular-json-editor.git"
+        "url": "git://github.com/ferronrsmith/fh.json.editor.git"
     },
     "main": "dist/angular-json-editor.js",
     "devDependencies": {
