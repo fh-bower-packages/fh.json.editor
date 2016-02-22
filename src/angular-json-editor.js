@@ -93,10 +93,9 @@ angular.module('angular-json-editor', []).provider('JSONEditor', function () {
                 }
 
                 function restart() {
-                    // since the watch is only on the schema, we need to also check the startval for changes
-                    var values = angular.equals(startVal, {}) ? scope.startval : startVal;
+                    var values = startVal;
                     if (scope.editor && scope.editor.destroy) {
-                        // values = scope.editor.getValue();
+                        values = scope.editor.getValue();
                         scope.editor.destroy();
                     }
 
@@ -129,7 +128,7 @@ angular.module('angular-json-editor', []).provider('JSONEditor', function () {
 
                 restart(startVal, schema);
 
-                scope.$watch('schema', function (newVal, oldVal) {
+                scope.$watch('schema', function (newVal) {
                     //update newScheme
                     if (newVal.success) {
                         newVal.success(function (data) {
@@ -140,6 +139,10 @@ angular.module('angular-json-editor', []).provider('JSONEditor', function () {
                     }
 
                     restart();
+                }, true);
+
+                scope.$watch('startval', function (newVal) {
+                    scope.editor.setValue(newVal);
                 }, true);
 
                 // Transclude the buttons at the bottom.
