@@ -115,7 +115,9 @@ angular.module('angular-json-editor', []).provider('JSONEditor', function () {
 
         function editorReady() {
           if (typeof scope.onReady === 'function') {
-            scope.onReady(scope.editor);
+            scope.onReady({
+              $editor: scope.editor
+            });
           }
           // reset isValid property onChange
           scope.$apply(function () {
