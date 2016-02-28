@@ -1,6 +1,6 @@
 {
     "name": "fh.json.editor",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "authors": [
         "Ferron Smith <ferronrsmith@gmail.com>",
         "Rodik Hanukaev <rodik@rodik.me>",
@@ -8,7 +8,7 @@
     ],
     "description": "angular.js directive for jdorn's json-editor",
     "license": "MIT",
-    "main": "src/angular-json-editor.js",
+    "main": "dist/angular-json-editor.js",
     "keywords": [
         "angular",
         "directive",
